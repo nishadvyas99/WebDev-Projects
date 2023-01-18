@@ -1,0 +1,117 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: #f5d9df;
+    font-family: "Nunito", sans-serif;
+}
+
+#navbar{
+    background-color: coral;
+    flex-direction: column;
+    align-items:flex-end;
+    font-size: 1.5rem;
+    font-weight: 100;
+    
+}
+
+#navbar .nav-link{
+    color: white;
+    padding: 1rem;
+}
+
+#navbar .nav-link:hover{
+    background-color: #45567d;
+}
+
+#welcome-section, #profile-links{
+    display: flex;
+    flex-direction: column;
+    padding:65px 0 0 0;
+    height: 100vh;
+    background-color: #312a2c;
+    justify-content: center;
+    align-items: center;
+}
+
+#welcome-section h1, #profile-links h1{
+    color: #f5d9df;
+}
+
+#welcome-section p{
+    color: #be3144;
+    font-style: italic;
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+
+#projects{
+    padding: 65px 0 0 0;
+    height: 100 vh;
+}
+
+#projects h2{
+    margin: 2rem 0 4rem 0;
+    text-align:center;
+}
+
+#projectHeading{
+    text-align: center;
+    margin: 2rem 0 4rem 0;
+    border-bottom: 2px solid black ;
+}
+
+#projects{
+    background-color: #415481;
+    text-decoration: none;
+    
+}
+
+#projects p{
+    color: #f5d9df;
+    padding: 20px 0 20px 0;
+    font-size: 1.5rem;
+    background-color: #303841;
+}
+
+#projects a:hover{
+    color: #f5d9df;
+    text-decoration:none !important;
+}
+
+.projectImg{
+    height: 55vh;
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+.contact-logo{
+    height: 100px;
+    width: 100px;
+}
+
+.prolinks{
+    height: 100%;
+}
+
+@media (max-width: 1000px){
+    #projects{
+        height: 100%;
+    }
+
+    .projects-grid{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .projectImg{
+        height: inherit !important;
+        width: inherit !important;
+    }
+    #projects p{
+        height: inherit;
+        width: inherit;
+    }
+}
