@@ -1,0 +1,107 @@
+body{
+    background: rgb(236, 230, 230);
+    font-family: "Nunito", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    position: fixed;
+    padding: 0;
+    height: 90%;
+    width: 300px;
+    border-right: 2px solid gray;
+    margin-right: 0;
+}
+
+.nav-heading{
+    margin: 10px 0 30px 20px;
+}
+
+.add-border{
+    border-bottom: 1px solid black;
+    text-align: justify;
+    padding-left: 26px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+#li-1{
+    border-top: 1px solid black;
+}
+
+.text-section{
+    position: absolute;
+    top: 30px;
+    left: 310px;
+    margin: 0 20px 0 10px;
+    text-align: justify;
+}
+
+.scrollable{
+    list-style: none;
+    width: 300px;
+    height: 100%;
+    margin: 0;
+    padding:0;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.scrollable a{
+    text-decoration: none;
+    color: #4d4e53;
+}
+
+.scrollable a:hover{
+    color: #4d4e53;
+}
+
+.para-text{
+    margin-left: 20px;
+}
+
+.code{
+    font-family: monospace;
+    background-color: #dddddd;
+    margin: 0 30px 20px 30px;
+}
+
+.code code{
+    margin:0;
+    color: black;
+}
+
+.text-section ul{
+    margin-left: 30px;
+}
+
+header{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+@media (max-width: 820px){
+    .navbar{
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        height: 300px;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+
+    .scrollable{
+        height: 207px;
+        border: 1px solid black;
+    }
+
+    .text-section{
+        position: relative;
+        margin-top: 350px;
+        top: 0;
+        left: 0;
+    }
+}

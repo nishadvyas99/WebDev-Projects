@@ -1,0 +1,250 @@
+html {
+  box-sizing: border-box;
+  font: "Lato", sans-serif;
+}
+
+body {
+  background-color: #eee;
+}
+
+#header {
+  margin: 10pxx;
+  background-color: #eee;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#header-img {
+  height: fit-content;
+  width: fit-content;
+  max-width: 300px;
+}
+
+#nav-bar {
+  display: flex;
+  align-items: flex-end;
+}
+
+.nav-link {
+  font-family: "Lato";
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  margin: 20px 40px;
+}
+
+#nav-bar:last-child {
+  margin-right: 60px;
+}
+
+.nav-link:hover {
+  cursor: pointer;
+}
+
+main {
+  margin-top: 70px;
+}
+
+#main-top {
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#form {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+#email {
+  width: 300px;
+  padding: 5px;
+  margin: 5px 0 20px 0;
+}
+
+#submit {
+  font-weight: 800;
+  text-transform: uppercase;
+  background-color: #f1c40f;
+  height: 30px;
+  margin: 0 60px;
+}
+
+#features {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  margin: 60px 15vw;
+}
+
+.icon::before {
+  display: inline;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.icon {
+  box-sizing: border-box;
+  display: flex;
+  height: 100px;
+  width: 20vw;
+  color: darkorange;
+  font-size: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+.fire::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f7e4";
+}
+
+.fire::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f7e4";
+}
+
+.truck::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f0d1";
+}
+
+.battery::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f240";
+}
+
+.grid {
+  box-sizing: border-box;
+  display: flex;
+}
+
+.grid-content {
+  font-family: "Lato";
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 125px;
+  width: 80vw;
+  padding: 5px;
+}
+.grid-content h2,
+.grid-content p {
+  margin: 0;
+}
+.grid-content h2 {
+  margin-bottom: 10px;
+}
+
+#howitworks {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px;
+}
+
+#pricing {
+  margin-top: 60px;
+  box-sizing: border-box;
+  font-family: "Lato";
+  display: flex;
+  justify-content: space-around;
+}
+
+.pricing-plan {
+  margin: 15px;
+  width: 25vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 2px;
+}
+
+.pricing-plan div {
+  width: 100%;
+  background-color: #ddd;
+  font-weight: 700;
+  padding: 15px 0;
+  text-align: center;
+}
+
+.pricing-plan h2 {
+  padding: 15px 0;
+  text-align: center;
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  text-align: center;
+  line-height: 2;
+}
+
+.select-button {
+  width: calc(100% / 3);
+  text-decoration: none;
+  margin: 30px 0px;
+  color: black;
+  border: 0;
+  text-transform: uppercase;
+  background-color: #f1c40f;
+  height: 40px;
+}
+
+.select-button:hover {
+  cursor: pointer;
+}
+
+footer {
+  margin-top: 30px;
+  box-sizing: border-box;
+  background-color: #ddd;
+  padding: 20px;
+}
+
+footer ul,
+footer p {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer ul li {
+  padding: 0 10px;
+}
+
+footer p {
+  color: #444;
+}
+
+@media (max-width: 720px) {
+  #pricing,
+  #header {
+    flex-direction: column;
+    align-items: center;
+  }
+  .pricing-plan {
+    width: 50%;
+  }
+}
